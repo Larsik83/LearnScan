@@ -28,24 +28,28 @@ public class Main {
         StringBuilder a1 = new StringBuilder();
         String a = "1";
 //цикл городничий
-        for (int i = 0; i < roles.length; i++) {
+//        for (int i = 0; i < roles.length; i++) {
+//
+//                for (int j = 0; j < roles.length; j++) {
+//
+//                    if (textLines[j].startsWith(roles[j])) {
+//                        a1.append(textLines[i]);
+//                    }
+//                    System.out.println(textLines[j]);
+//                }
+//
+//
+//
+//        }
 
-            if (textLines[i].startsWith(roles[i])) {
-
-                for (int j = 0; j < roles.length; j++) {
-
-                    if (textLines[j].startsWith(roles[j])) {
-                        a1.append(textLines[i]);
-                    }
-                    System.out.println(textLines[j]);
-                }
-
-
+        for (String role : roles) {
+            for (String line : textLines) {
+                if (role.startsWith(textLines)) {
+//                        a1.append(textLines[i]);
+//                    }
+//                    System.out.println(textLines[j]);
             }
         }
-
-
-
 
         return a;
 
